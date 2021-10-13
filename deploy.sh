@@ -4,7 +4,7 @@ green=$'\e[1;32m'
 white=$'\e[0m'
 
 echo $'\n'
-echo $white"# Enter Commit:"
+echo $green"# Enter Commit:"$white
 
 read COMMIT
 
@@ -13,7 +13,7 @@ git add --all
 git commit -m COMMIT
 
 echo $'\n'
-echo $white "# Enter Branch Name:"
+echo $green "# Enter Branch Name:" $white
 
 read BRANCH
 
