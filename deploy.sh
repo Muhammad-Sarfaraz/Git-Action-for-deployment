@@ -1,7 +1,7 @@
 #!/bin/sh
 
-
-echo $'\r'"Enter Commit"$'\r'
+echo $'\n'
+echo "Enter Commit"
 
 read COMMIT
 
@@ -9,14 +9,15 @@ git add --all
 
 git commit -m COMMIT
 
-echo $'\r'"Enter Branch Name."$'\r'
+echo $'\n'
+echo "Enter Branch Name."
 
 read BRANCH
 
 git checkout -b BRANCH
 
-echo $'\r'"Branch created successfully."$'\r'
+echo "Branch created successfully."
 
 git push origin BRANCH
 
-echo $'\r'"Pushed successfully."$'\r'
+echo "Pushed successfully."
