@@ -2,12 +2,9 @@
 
 # Author : Sarfaraz
 
-# Color code
 green=$'\e[1;32m'
 white=$'\e[0m'
-red=$'\e[1;31m'
 
-# Script
 echo $'\n'
 echo $green "# Enter Your Commit:"$white
 
@@ -35,4 +32,4 @@ echo $'\n'
 echo  $green "# Pushed successfully." $white
 
 echo $'\n'
-echo  $white "# Now please open a new pull request and" $red "uddhar koro amk" $red
+echo  $white "# Now please open a new pull request and uddhar koro amk" $white
