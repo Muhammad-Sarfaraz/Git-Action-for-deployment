@@ -2,7 +2,6 @@ on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
@@ -14,4 +13,4 @@ jobs:
         server: ftp.systemminelab.com
         username: deploy@deploy.systemminelab.com
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: '/'
+   
