@@ -12,5 +12,5 @@ jobs:
       with:
         server: ftp.systemminelab.com
         username: fix_deploy@systemminelab.com
-        password: ${{ secrets.FTP_PASSWORD }}
+        password: ${{ secrets.FTP_FIX_PASSWORD }}
    
