@@ -1,10 +1,12 @@
 #!/bin/sh
 
+# Author : Sarfaraz
+
 green=$'\e[1;32m'
 white=$'\e[0m'
 
 echo $'\n'
-echo $green"# Enter Commit:"$white
+echo $green "# Enter Your Commit:"$white
 
 read COMMIT
 
@@ -13,7 +15,7 @@ git add --all
 git commit -m COMMIT
 
 echo $'\n'
-echo $green "# Enter Branch Name:" $white
+echo $green "# Enter Your Branch Name:" $white
 
 read BRANCH
 
