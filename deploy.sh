@@ -5,7 +5,7 @@
 # Color code
 green=$'\e[1;32m'
 white=$'\e[0m'
-yellow=$"\e{1;33"
+red=$'\e[1;31m'
 
 # Script
 echo $'\n'
@@ -35,4 +35,4 @@ echo $'\n'
 echo  $green "# Pushed successfully." $white
 
 echo $'\n'
-echo  $white "# Now please open a new pull request and" $yellow "uddhar koro amk" $white
+echo  $white "# Now please open a new pull request and" $red "uddhar koro amk" $red
