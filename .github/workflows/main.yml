@@ -13,4 +13,5 @@ jobs:
         server: ftp.systemminelab.com
         username: deploy@deploy.systemminelab.com
         password: ${{ secrets.FTP_PASSWORD }}
+        server-dir : "./"
    
