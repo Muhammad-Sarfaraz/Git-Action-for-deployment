@@ -30,3 +30,6 @@ git push origin BRANCH
 
 echo $'\n'
 echo  $green "# Pushed successfully." $white
+
+echo $'\n'
+echo  $white "# Now please open a new pull request and uddhar koro amk" $white
