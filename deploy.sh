@@ -8,11 +8,11 @@ white=$'\e[0m'
 echo $'\n'
 echo $green "# Enter Your Commit:"$white
 
-read
+read COMMIT
 
 git add --all
 
-git commit -m ${REPLY}}
+git commit -m ${COMMIT}
 
 echo $'\n'
 echo $green "# Enter Your Branch Name:" $white
