@@ -3,6 +3,7 @@
 green=$'\e[1;32m'
 white=$'\e[0m'
 
+echo $'\n'
 echo $white"Enter Commit"
 
 read COMMIT
@@ -20,10 +21,10 @@ echo $'\n'
 git checkout -b BRANCH
 
 echo $'\n'
-echo $green "Branch created successfully."
+echo $green "Branch created successfully." $white
 
 echo $'\n'
 git push origin BRANCH
 
 echo $'\n'
-echo  $green "Pushed successfully."
+echo  $green "Pushed successfully." $white
