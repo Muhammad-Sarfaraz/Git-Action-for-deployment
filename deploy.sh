@@ -2,34 +2,53 @@
 
 # Author : Sarfaraz
 
+# Color
 green=$'\e[1;32m'
 white=$'\e[0m'
 
+# Script Goes Here....
 echo $'\n'
-echo $green "# Enter Your Commit:"$white
+echo $white"Please enter what do you like to do:pull/push"$white
+read INPUT
 
-read COMMIT
 
-git add --all
 
-git commit -m ${COMMIT}
+if [[ $INPUT == "pull" || $INPUT == "Pull" || $INPUT == "PULL" ]]; 
+then
 
-echo $'\n'
-echo $green "# Enter Your Branch Name:" $white
+    echo $green"# Enter Your Commit:"$white
 
-read BRANCH
+elif [[ $INPUT == "push" || $INPUT == "Push" || $INPUT == "PUSH" ]]; 
+then
 
-echo $'\n'
-git checkout -b ${BRANCH}
+    echo $green"# Enter Your Commit:"$white
 
-echo $'\n'
-echo $green "# Branch created successfully." $white
+    read COMMIT
 
-echo $'\n'
-git push origin ${BRANCH}
+    git add --all
 
-echo $'\n'
-echo  $green "# Pushed successfully." $white
+    git commit -m ${COMMIT}
 
-echo $'\n'
-echo  $white "# Now please open a new pull request and uddhar koro amk" $white
+    echo $'\n'
+    echo $green"# Enter Your Branch Name:" $white
+
+    read BRANCH
+
+    echo $'\n'
+    git checkout -b ${BRANCH}
+
+    echo $'\n'
+    echo $green"# Branch created successfully." $white
+
+    echo $'\n'
+    git push origin ${BRANCH}
+
+    echo $'\n'
+    echo  $green"# Successfully pushed to branch [ ${BRANCH} ]" $white
+
+    echo $'\n'
+    echo  $white"# Now please open a new pull request and uddhar koro amk" $white
+else
+     echo $'\n'
+     echo $white"You entered an invalid input. $INPUT" $white
+fi
