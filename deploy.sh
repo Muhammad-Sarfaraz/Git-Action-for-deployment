@@ -8,15 +8,15 @@ white=$'\e[0m'
 
 # Script Goes Here....
 echo $'\n'
-echo $white"Please enter what do you like to do:pull/push"$white
+echo $white"What do you like ? [pull/push/prod]"$white
 read INPUT
-
-
 
 if [[ $INPUT == "pull" || $INPUT == "Pull" || $INPUT == "PULL" ]]; 
 then
 
-    echo $green"# Enter Your Commit:"$white
+    git pull origin main
+
+    echo $green"# Pull origin main success."$green
 
 elif [[ $INPUT == "push" || $INPUT == "Push" || $INPUT == "PUSH" ]]; 
 then
